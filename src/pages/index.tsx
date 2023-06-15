@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Main.module.css';
 import Image from 'next/image';
+import { Hero } from '@/sections';
 
 export default function Main() {
   return (
@@ -12,8 +13,10 @@ export default function Main() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        Testing
-        <Image src="/logo.svg" width={40} height={50} alt="kdkd" />
+        <Hero />
+        <section id="presentation">Presentation</section>
+        <section id="features">features</section>
+        <section id="description">description</section>
       </main>
     </>
   );

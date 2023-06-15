@@ -1,0 +1,20 @@
+.calculator {
+    background: #FFFFFF;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+    width: 100%;
+    height: 649px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.calculator__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #253347;
+     margin-bottom: 4px;
+}
