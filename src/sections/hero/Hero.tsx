@@ -1,13 +1,21 @@
+'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import styles from './Hero.module.css';
 import { Calculator } from '@/components';
+import { useWidth } from '@/hooks';
 
 export const Hero = () => {
+  const { imgMeasurement } = useWidth();
   return (
     <section id="hero" className={styles.hero}>
       <nav className={styles.hero__nav}>
-        <Image src="/logo.svg" alt="logo" width={40} height={40} />
+        <Image
+          src="/logo.svg"
+          alt="logo"
+          width={imgMeasurement}
+          height={imgMeasurement}
+        />
       </nav>
       <div className={styles.hero__content}>
         <div className={styles.hero__headers}>
@@ -21,7 +29,7 @@ export const Hero = () => {
             to evaluate your overall health and well-being.
           </h1>
         </div>
-        <Calculator/>
+        <Calculator />
       </div>
     </section>
   );

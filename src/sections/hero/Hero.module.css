@@ -60,3 +60,67 @@
     color: var(--dark-electric-blue);
 
 }
+
+@media (min-width: 768px) {
+    .hero {
+        display: flex;
+        gap: 40px;
+    }
+
+    .hero__headers--title {
+        max-width: 580px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        gap: 40px;
+    }
+
+    .hero__headers--title {
+        max-width: 580px;
+    }
+}
+
+@media (min-width: 993px) {
+    .hero {
+        padding: 74px 140px;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .hero__nav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 564px;
+        align-self: flex-start;
+    }
+
+    .hero::after {
+        max-width: 978px;
+        max-height: 737px;
+    }
+
+    .hero__content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero__headers {
+        gap: 34px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .hero__headers--title {
+        text-align: start;
+        font-size: 64px;
+    }
+
+    .hero__headers--subtitle {
+        text-align: start;
+        max-width: 465px;
+    }
+
+}

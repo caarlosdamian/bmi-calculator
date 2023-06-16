@@ -16,5 +16,12 @@
     line-height: 29px;
     letter-spacing: -0.05em;
     color: #253347;
-     margin-bottom: 4px;
+    margin-bottom: 4px;
+}
+
+@media (min-width: 993px) {
+    .calculator {
+       width: 564px;
+height: 484px;
+    }
 }
