@@ -10,7 +10,7 @@ export const Presentation = () => {
         <div className={styles['presentation__img-image']}>
           <Image
             src="/image-man-eating.webp"
-            alt=""
+            alt="testing"
             width={375}
             height={375}
             style={{
