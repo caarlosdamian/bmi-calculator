@@ -33,6 +33,14 @@
     color: #5E6E85;
 }
 
+
+.presentation__img-image {
+    width: 375px;
+    height: 354.39px;
+    position: relative;
+
+}
+
 @media (min-width: 768px) {
     .presentation {
         flex-direction: row;
@@ -41,5 +49,28 @@
 
     .presentation__content {
         padding: 42px;
+    }
+}
+
+@media (min-width: 993px) {
+    .presentation {
+        padding: 0 140px;
+        gap: 130px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .presentation__content {
+        max-width: 465px;
+        padding: 0;
+    }
+
+    .presentation__img-image {
+        width: 564px;
+        height: 533px;
+    }
+
+    .presentation__content-title {
+        font-size: 48px;
     }
 }

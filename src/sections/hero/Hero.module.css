@@ -72,16 +72,6 @@
     }
 }
 
-@media (min-width: 768px) {
-    .hero {
-        gap: 40px;
-    }
-
-    .hero__headers--title {
-        max-width: 580px;
-    }
-}
-
 @media (min-width: 993px) {
     .hero {
         padding: 74px 140px;
