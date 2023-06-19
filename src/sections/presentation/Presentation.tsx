@@ -6,7 +6,6 @@ export const Presentation = () => {
   return (
     <section id="presentation" className={styles.presentation}>
       <div className={styles.presentation__img}>
-        {/* <div className={styles['presentation__img-background']}></div> */}
         <div className={styles['presentation__img-image']}>
           <Image
             src="/image-man-eating.webp"
