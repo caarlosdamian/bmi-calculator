@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 export const Benefits = () => {
   return (
-    <section id="features">
-        <Image  width={100} height={100} src={test}/>
+    <section id="features" className={styles.container}>
+        
     </section>
   )
 }
