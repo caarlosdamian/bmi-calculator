@@ -1,13 +1,13 @@
 import { eating, exercise, sleep } from '../../public/';
 
-export interface BenefitsInfo {
+export interface Info {
  id: string;
  title: string;
  desc: string;
  img: any;
 }
 
-export const benefitsInfo: BenefitsInfo[] = [
+export const benefitsInfo: Info[] = [
  {
   id: 'healty',
   title: 'Healthy eating',

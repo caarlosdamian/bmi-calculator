@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Main.module.css';
-import { Benefits, Hero, Presentation } from '@/sections';
+import { Benefits, Description, Hero, Presentation } from '@/sections';
 
 export default function Main() {
   return (
@@ -15,7 +15,7 @@ export default function Main() {
         <Hero />
         <Presentation />
         <Benefits />
-        <section id="description">description</section>
+        <Description />
       </main>
     </>
   );
