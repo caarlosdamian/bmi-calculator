@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     max-width: 280px;
+    margin-bottom: 8px;
 }
 
 .input {
