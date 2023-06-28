@@ -21,7 +21,17 @@
 
 @media (min-width: 993px) {
     .calculator {
-       width: 564px;
-height: 484px;
+        width: 564px;
+        height: 484px;
     }
+}
+
+.calculator__inputs {
+    display: grid;
+    gap: 16px;
+
+}
+
+.imperial {
+    grid-template-columns: repeat(2, 1fr);
 }

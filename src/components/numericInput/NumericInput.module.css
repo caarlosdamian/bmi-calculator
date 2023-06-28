@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    border-radius: 12px;
+    border: 1px solid #D8E2E7;
+    background: var(--pure-white, #FFF);
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 280px;
+}
+
+.input {
+    outline: none;
+    border: none;
+    /* border-radius: 12px; */
+    min-height: 30px;
+    color: var(--gunmetal);
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    /* max-width: 173px;
+    wi */
+    width: 100%;
+}
+
+.input::placeholder {
+    opacity: 0.25;
+
+}
+
+.label {
+color: var(--blue, #345FF6);
+font-size: 24px;
+font-family: Inter;
+font-weight: 600;
+letter-spacing: -1.2px;
+}
