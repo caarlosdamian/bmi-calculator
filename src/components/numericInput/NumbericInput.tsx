@@ -13,7 +13,8 @@ export const NumbericInput = ({ onChange, label, ...props }: Props) => {
         className={styles.input}
         type="text" inputMode="numeric"
         onChange={(e: ChangeEvent<HTMLInputElement>) =>
-          onChange({target:e.target.value,name:props.name})
+          // @ts-ignore
+          onChange({ target :e.target.value,name:props.name})
         }
       />
       <p className={styles.label}>{label}</p>
