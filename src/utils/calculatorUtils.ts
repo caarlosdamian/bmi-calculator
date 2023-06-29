@@ -6,13 +6,13 @@ export const InputElements = [
         id: 'imperial1',
         name: 'feets',
         placeholder: '0',
-        label:'ft'
+        label: 'ft',
       },
       {
         id: 'imperial2',
         name: 'inches',
         placeholder: '0',
-        label:'in'
+        label: 'in',
       },
     ],
     weight: [
@@ -20,13 +20,13 @@ export const InputElements = [
         id: 'imperial3',
         name: 'stones',
         placeholder: '0',
-        label:'st'
+        label: 'st',
       },
       {
         id: 'imperial4',
         name: 'pounds',
         placeholder: '0',
-        label:'lbs'
+        label: 'lbs',
       },
     ],
   },
@@ -37,7 +37,7 @@ export const InputElements = [
         id: 'metric1',
         name: 'centimenters',
         placeholder: '0',
-        label:'cm'
+        label: 'cm',
       },
     ],
     weight: [
@@ -45,8 +45,32 @@ export const InputElements = [
         id: 'metric3',
         name: 'kilograms',
         placeholder: '0',
-        label:'kg'
+        label: 'kg',
       },
     ],
   },
 ];
+
+export const weightDefinitions = (bmi:number) => {
+  if (bmi === 0) {
+    return;
+  } else if (bmi < 18.5) {
+    return 'Underweight';
+  } else if (bmi >= 18.5 && bmi <= 24.9) {
+    return 'Healthy weight';
+  } else if (bmi >= 25 && bmi <= 29.9) {
+    return 'Overweight';
+  } else if (bmi > 30) {
+    return 'Obese';
+  }
+
+  //  Underweight:
+  //  Healthy weight:
+  //  Overweight:
+  //  Obese:
+
+  // - Underweight: BMI less than 18.5
+  // - Healthy weight: BMI 18.5 to 24.9
+  // - Overweight: BMI 25 to 29.9
+  // - Obese: BMI 30 or greater
+};

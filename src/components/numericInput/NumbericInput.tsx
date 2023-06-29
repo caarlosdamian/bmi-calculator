@@ -11,7 +11,7 @@ export const NumbericInput = ({ onChange, label, ...props }: Props) => {
       <input
         {...props}
         className={styles.input}
-        type="number"
+        type="text" inputMode="numeric"
         onChange={(e: ChangeEvent<HTMLInputElement>) =>
           onChange({target:e.target.value,name:props.name})
         }
